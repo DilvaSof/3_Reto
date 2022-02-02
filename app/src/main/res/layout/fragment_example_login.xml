@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExampleLoginFragment">
+
+    <ImageView
+        android:layout_width="50pt"
+        android:layout_height="50pt"
+        android:src="@drawable/ic__535180_beverage_bean_glass_mug_coffee_bottle"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="330dp"
+        android:layout_height="44dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="User"
+        android:textSize="16sp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="330dp"
+        android:layout_height="44dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Password"
+        android:textSize="16sp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/user"
+        app:layout_constraintStart_toStartOf="@+id/user"
+        tools:layout_editor_absoluteY="331dp" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="316dp"
+        android:layout_height="37dp"
+        android:background="@drawable/button_bg"
+        android:text="Login"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="473dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="¿Olvidaste tu contraseña?"
+        app:layout_constraintEnd_toEndOf="@+id/pass"
+        app:layout_constraintStart_toStartOf="@+id/pass"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+    />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
